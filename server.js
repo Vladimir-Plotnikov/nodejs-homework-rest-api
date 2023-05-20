@@ -2,7 +2,7 @@ const mongoose = require("mongoose")
 
 const app = require('./app')
 
-const DB_HOST = "mongodb+srv://Pinkcream:Pinkcream84@cluster0.fl5hhhy.mongodb.net/db-contacts?retryWrites=true&w=majority"
+const{DB_HOST}  = require("./config")
 
 mongoose.set('strictQuery', true);
 mongoose.connect(DB_HOST)
